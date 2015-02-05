@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android_button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/viewImage" />
+
+    <Spinner
+        android:id="@+id/osversions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/selVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/osversions"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="#444444"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="9dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="10dip"
+            android:text="Sleep time in milliseconds:"/>
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_alignTop="@id/tv_time"
+            android:inputType="text"
+            />
+        <Button
+            android:id="@+id/btn_do_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_time"
+            android:text="Run Async task" />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="400dip"
+            android:layout_height="100dip"
+            android:textSize="7pt"
+            android:layout_below="@id/btn_do_it"
+            android:textColor="#AA0000"
+            android:text=""/>
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="10"
+            android:padding="10dip">
+        </ProgressBar>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Progress" >
+        </Button>
+        <TextView android:id="@+id/output"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Replace"/>
+
+
+
+
+
+
+
+</LinearLayout>
